@@ -8,6 +8,8 @@ export default function Logo({ className = "" }: { className?: string }) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="flex-shrink-0"
+        role="img"
+        aria-label="Claude Code for Business logo"
       >
         {/* Terminal/Code icon with Claude orange */}
         <rect width="48" height="48" rx="8" fill="#CC785C" />

@@ -18,11 +18,11 @@ export default function Instructor() {
                 <div className="aspect-square relative rounded-2xl overflow-hidden shadow-lg">
                   <Image
                     src="/Image_202601261531.jpeg"
-                    alt="AI Mentor Team"
+                    alt="AI Mentor - Helping business owners leverage Claude Code for productivity and automation"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
-                    priority
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -67,6 +67,7 @@ export default function Instructor() {
                         className="w-6 h-6 text-claude-orange flex-shrink-0 mt-1"
                         fill="currentColor"
                         viewBox="0 0 20 20"
+                        aria-hidden="true"
                       >
                         <path
                           fillRule="evenodd"
@@ -83,6 +84,7 @@ export default function Instructor() {
                         className="w-6 h-6 text-claude-orange flex-shrink-0 mt-1"
                         fill="currentColor"
                         viewBox="0 0 20 20"
+                        aria-hidden="true"
                       >
                         <path
                           fillRule="evenodd"
@@ -99,6 +101,7 @@ export default function Instructor() {
                         className="w-6 h-6 text-claude-orange flex-shrink-0 mt-1"
                         fill="currentColor"
                         viewBox="0 0 20 20"
+                        aria-hidden="true"
                       >
                         <path
                           fillRule="evenodd"
@@ -115,6 +118,7 @@ export default function Instructor() {
                         className="w-6 h-6 text-claude-orange flex-shrink-0 mt-1"
                         fill="currentColor"
                         viewBox="0 0 20 20"
+                        aria-hidden="true"
                       >
                         <path
                           fillRule="evenodd"
