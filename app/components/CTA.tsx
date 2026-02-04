@@ -1,3 +1,11 @@
+"use client";
+
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 interface CTAProps {
   text?: string;
   subtext?: string;
@@ -15,12 +23,23 @@ export default function CTA({
 }: CTAProps) {
   const checkoutUrl = "https://whop.com/aimentor-elevating-minds-with-ai";
 
+  const handleClick = () => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "cta_click", {
+        event_category: "conversion",
+        event_label: text,
+        value: 29.99,
+      });
+    }
+  };
+
   return (
     <div className={`flex flex-col items-center gap-4 ${className}`}>
       <a
         href={checkoutUrl}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={handleClick}
         className={`btn-primary inline-block text-center ${
           size === "large" ? "text-xl md:text-2xl py-5 px-10" : ""
         }`}
